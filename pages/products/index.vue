@@ -16,6 +16,16 @@
 // Fetching data from the API
 const { data: products } =  await useFetch('https://fakestoreapi.com/products');
 
+useHead({
+    title: 'Rab Site | Merch',
+    meta: [
+        {
+            name: 'description',
+            content: 'Rab Site Merch',
+        },
+    ],
+})
+
 </script>
 
 <style scoped>

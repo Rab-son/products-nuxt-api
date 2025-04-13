@@ -9,5 +9,18 @@ export default defineNuxtConfig({
     exposeConfig: false,
     injectPosition: 0,
     viewer: true,
+  },
+  app: {
+    head: {
+      title: 'Rab Site',
+      meta: [
+        { name: 'description', content: 'Rab Site' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { charset: 'utf-8' },
+      ],
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
+      ]
+    }
   }
 })
